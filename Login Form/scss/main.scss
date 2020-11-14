@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px
+}
+
+body{
+    background-color: #1F1C44;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 37.5rem;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 6rem;
+}
+
+.card{
+
+
+    &__title{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    &__parag{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: #949495;
+        margin-top: 3rem;
+    }
+
+    &__form{
+        margin-top: 2rem;
+        &--title{
+            font-size: 1,6rem;
+            margin-bottom: 1rem;
+        }
+        &--input{
+            width:100%;
+            padding:2.5rem 2.2rem;
+            border: 1px solid #949495;
+            outline: 0;
+            color: #000;
+            border-radius: 1rem;
+            &::placeholder{
+                color: #949495;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+.btn{
+    width: 100%;
+    display: inline-block;
+    padding: 2.5rem 5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #5B86E6;
+    margin-top: 5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 5px 10px #5B86E6;
+    &__span{
+       display: inline-block;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       min-width: 16.9rem;
+    }
+}
+.pink{
+    background-color: #E65B7C;
+    box-shadow:  0 5px 10px #E65B7C;
+}
+
+.login{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: bold;
+    margin-top: .5rem;
+    a{
+        text-decoration: none;
+        color: #5B86E6;
+    }
+}
+
+.google{
+    position: relative;
+    &__span{
+        display: inline-block;
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        margin: .7rem 1rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: #fff;
+        border-radius: 1rem;
+
+        img{
+           padding: .1rem .1rem .1rem .1rem;
+        }
+
+    }
+}
