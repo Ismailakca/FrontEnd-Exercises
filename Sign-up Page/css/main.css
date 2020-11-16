@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mulish',sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.pb {
+  padding-bottom: 45rem;
+}
+
+.container {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  display: flex;
+}
+
+.left {
+  min-width: 46.5rem;
+  background: linear-gradient(135deg, #BA91E9 0%, #6D58CE 100%);
+  color: #fff;
+}
+
+.left__content {
+  padding-left: 6.5rem;
+  padding-top: 6.5rem;
+}
+
+.left__content--item:not(:last-child) {
+  padding-bottom: 4rem;
+}
+
+.left__content--item h4 {
+  font-size: 2rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.right {
+  max-width: 41.7rem;
+  margin-left: 9.5rem;
+  margin-top: 14.3rem;
+}
+
+.right__content--title {
+  font-size: 3.2rem;
+  padding-bottom: 3.5rem;
+}
+
+.right__content .form__title {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.right__content .form__title:not(:first-child) {
+  padding-top: 3.5rem;
+}
+
+.right__content .form__input {
+  width: 100%;
+  padding: 2rem 2rem;
+  outline: 0;
+}
+
+.right__content .form__btn {
+  border: none;
+  outline: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #BA91E9 0%, #6D58CE 100%);
+  color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.right__content .form__btn:hover {
+  background: linear-gradient(135deg, #6D58CE 0%, #BA91E9 100%);
+}
+
+.right__content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.right__content .checkbox .form__check {
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-right: .5rem;
+}
+/*# sourceMappingURL=main.css.map */
