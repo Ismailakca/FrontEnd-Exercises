@@ -1,0 +1,21 @@
+{
+  "name": "card-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-compile": "node-sass -w scss/main.scss css/main.css",
+    "live": "live-server",
+    "compile:sass": "node-sass scss/main.scss css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.comp.css -o css/main.prefix.css",
+    "compress:css": "node-sass scss/main.scss scss/main.scss --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.0"
+  }
+}
