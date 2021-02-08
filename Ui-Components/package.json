@@ -1,0 +1,19 @@
+{
+  "name": "ui-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "live-server",
+    "css:compiler": "node-sass -w scss/main.scss css/main.css",
+    "compress:css": "node-sass css/main.css css/main.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
