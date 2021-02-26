@@ -1,0 +1,32 @@
+html
+    head
+        meta(charset='UTF-8')
+        title Menu
+        link(rel="stylesheet",href="./main.css")
+    body
+        div.card
+            div.card__studio
+                p.title Studio
+                ul.card__studio-list
+                  each val in ['Case Studies','About Us','Our Customers','Contact']
+                      li.sa= val
+            div.card__studio
+                p.title Company
+                each val in ['Revenues','Brand and Guides','Press','Legal']
+                    li.sa= val
+            div.card__blog
+                p.title FROM THE BLOG
+                 div.item__one
+                    div.item__content
+                         p.content__main
+                            | The signs of
+                            br
+                            | Spring
+                         p.content__info by Josh Bean
+                    img(src="./image/apartment.svg").image
+                div.item__one
+                    div.item__content
+                        p.content__main The signs of Spring
+                        p.content__info by Josh Bean
+                    img(src="./image/flower.svg").image
+
