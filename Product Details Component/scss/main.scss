@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap');
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+html{
+  box-sizing: border-box;
+  font-family: 'Mulish',sans-serif;
+}
+body{
+  background-color: #F2F2F2;
+  padding: 10px;
+}
+
+.component{
+  background-color: #fff;
+  box-shadow: 0px 20px 40px -20px rgba(0, 27, 37, 0.644531);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.componnetone{
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  .name{
+    margin-top: 15px;
+    color: #273240;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .name__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #273240;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    a{
+      width: 130px;
+      height: 61px;
+      border: 2px solid #E1E1E1;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #CA7737;
+      font-weight: 600;
+      font-size: 18px;
+      transition: .5s all;
+    }
+    a:hover{
+      background-color: #CA7737;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+.componenttwo{
+  max-width: 506px;
+  height: 144px;
+  padding-left: 45px;
+  padding-right: 45px;
+
+  .list{
+      display:inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+
+    .list__item{
+      background: #FFFFFF;
+      border: 1px solid #E1E1E1;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 103px;
+      height: 44px;
+      cursor: pointer;
+      img{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.componentthree{
+  max-width: 512px;
+  padding-top: 65px;
+  padding-left: 63px;
+  padding-right: 65px;
+  padding-bottom: 50px;
+  h1{
+    font-weight: 800;
+    font-size: 24px;
+    color: #273240;
+    margin-bottom: 18px;
+  }
+  p{
+    font-size: 14px;
+    color: #273240;
+    span{
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: underline;
+      display: inline-block;
+      padding-left: 8px;
+    }
+  }
+  .col{
+    margin-top: 34px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 33px;
+    .title{
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .colist{
+      width: 100%;
+
+      li {
+        padding-bottom: 15px;
+        .radio {
+          display: flex;
+          align-items: center;
+          color: #273240;
+          font-size: 14px;
+          font-weight: 400;
+          cursor: pointer;
+
+          .cb{
+            margin-right: 10px;
+            width: 29px;
+            height: 29px;
+            min-width: 29px;
+            border-radius: 50%;
+            position: relative;
+            border: 2px solid #273240;
+            &::before{
+              content: '';
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background: #273240;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              display: none;
+            }
+          }
+          input{
+            display: none;
+            &:checked + .cb{
+                border-color: #273240;
+              &::before{
+                display: block;
+              }
+            }
+          }
+          .money{
+            margin-left: auto;
+          }
+        }
+      }
+    }
+    .learn{
+      font-size: 14px;
+      font-weight: 400;
+      color: #273240;
+      text-decoration: underline;
+      margin-top: 35px;
+    }
+  }
+  .colbutons{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    a{
+      height: 61px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: #FFFFFF;
+      border: 2px solid #E1E1E1;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #CA7737;
+      transition: .5s all;
+      &:hover{
+        background-color: #CA7737;
+        color: #fff;
+      }
+    }
+  }
+}
